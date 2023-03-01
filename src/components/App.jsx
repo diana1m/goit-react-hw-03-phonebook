@@ -66,7 +66,7 @@ export class App extends Component{
     const { filter: filterValue } = this.state;
      return (
       <Layout>
-        <h1>Phonebook</h1>
+        <h1>Phone book</h1>
         <ContactsForm onSave={this.addContact} contacts={this.state.contacts}></ContactsForm>
         <h2>Contacts</h2>
         <Filter onChange={this.handleChange} value={filterValue}/> 
