@@ -48,12 +48,6 @@ export class App extends Component{
     return contactsArr.filter(contact => contact.name.toLowerCase().includes(this.state.filter.toLowerCase()));
   }
 
-  checkName = name => {
-    if(this.state.contacts.find(contact => contact.name === name)){
-      alert(`${name} is already in contacts!`)
-    }
-  }
-
   deleteContacts = name => {
     this.setState(prevState => {
       return {
